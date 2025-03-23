@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Demo Page</title>
+</head>
+<body>
+    <h1>Hello There Welcome To This Demo!</h1>
+    <p>Try entering your name below, if you wish:</p>
+    <input type="text" id="userInput" placeholder="Enter your name">
+    <button onclick="sayHello()">Submit</button>
+
+    <!--This creates a box where we'll fake an HTTP request to show what would be sent in a real form submission-->
+    <h3>Simulated HTTP Request:</h3> 
+    <pre id="httpRequestBox" style="background-color: #f4f4f4; padding: 10px; border: 1px solid #ccc;"></pre>"
+    <div id="securityTip" style="display: none; border: 1px solid red; padding: 10px; background-color: #ffe6e6;"> 
+        <strong> Warning: </strong> It looks like you entered code that could be used in a Cross-Site Scripting (XSS) attack.<br> 
+        Real websites must sanitize input to prevent this. <br> 
+        <em> Tip: Use <code> text content </code> instead of <code> inner HTML code </code> when displaying user input.</em>
+    
+    </div>"
+    <p id="output"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
